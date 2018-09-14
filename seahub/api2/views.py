@@ -1401,9 +1401,15 @@ class DownloadRepo(APIView):
             error_msg = 'Library %s not found.' % repo_id
             return api_error(status.HTTP_404_NOT_FOUND, error_msg)
 
-        if not check_folder_permission(request, repo_id, '/'):
+        perm = check_folder_permission(request, repo_id, '/')
+        if not perm:
             return api_error(status.HTTP_403_FORBIDDEN,
                     'You do not have permission to access this library.')
+
+        username = request.user.username
+        if not seafile_api.is_repo_syncable(repo_id, username, perm):
+            return api_error(status.HTTP_403_FORBIDDEN,
+                             'unsyncable share permission')
 
         return repo_download_info(request, repo_id)
 
