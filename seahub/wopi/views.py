@@ -86,14 +86,19 @@ def access_token_check(func):
                                 content_type=json_content_type)
 
         info_dict = get_file_info_by_token(token)
+        if not info_dict:
+            logger.error('Get wopi cache value failed: wopi_access_token_%s.' % token)
+            return HttpResponse(json.dumps({}), status=404,
+                    content_type=json_content_type)
+
         request_user = info_dict['request_user']
         repo_id = info_dict['repo_id']
         file_path= info_dict['file_path']
         obj_id = info_dict['obj_id']
 
         if not request_user or not repo_id or not file_path:
-            logger.error('File info invalid, user: %s, repo_id: %s, path: %s.' \
-                    % (request_user, repo_id, file_path))
+            logger.error('File info invalid for token %s, user: %s, repo_id: %s, path: %s.' \
+                    % (token, request_user, repo_id, file_path))
             return HttpResponse(json.dumps({}), status=404,
                                 content_type=json_content_type)
 
