@@ -19,14 +19,13 @@ from pysearpc import SearpcError
 from seaserv import seafile_api
 
 from seahub.base.accounts import User, ANONYMOUS_EMAIL
-from seahub.base.templatetags.seahub_tags import email2nickname
 from seahub.utils import gen_inner_file_get_url, \
     gen_inner_file_upload_url, is_pro_version
+from seahub.base.templatetags.seahub_tags import email2nickname
+
 from seahub.settings import SITE_ROOT
 
 from seahub.wopi.utils import get_file_info_by_token
-
-from seahub.alibaba.models import AlibabaUserEditFile
 
 logger = logging.getLogger(__name__)
 json_content_type = 'application/json; charset=utf-8'
@@ -212,13 +211,6 @@ class WOPIFilesView(APIView):
     @access_token_check
     def post(self, request, file_id, format=None):
 
-        token = request.GET.get('access_token', None)
-
-        info_dict = get_file_info_by_token(token)
-        request_user = info_dict['request_user']
-        repo_id = info_dict['repo_id']
-        file_path= info_dict['file_path']
-
         response_409 = HttpResponse(json.dumps({}),
                 status=409, content_type=json_content_type)
 
@@ -242,13 +234,6 @@ class WOPIFilesView(APIView):
                     else:
                         unlock_file(request)
                         lock_file(request)
-                        try:
-                            AlibabaUserEditFile.objects.add_or_update_start_edit_info(request_user,
-                                    repo_id, file_path, x_wopi_oldlock,
-                                    x_wopi_lock)
-                        except Exception as e:
-                            logger.error(e)
-
                         return HttpResponse()
                 else:
                     response_409['X-WOPI-Lock'] = ''
@@ -259,13 +244,6 @@ class WOPIFilesView(APIView):
                     # If the file is currently unlocked
                     # the host should lock the file and return 200 OK.
                     lock_file(request)
-                    try:
-                        AlibabaUserEditFile.objects.add_or_update_start_edit_info(request_user,
-                                repo_id, file_path, x_wopi_oldlock,
-                                    x_wopi_lock)
-                    except Exception as e:
-                        logger.error(e)
-
                     return HttpResponse()
                 else:
                     # If the file is currently locked
@@ -313,11 +291,6 @@ class WOPIFilesView(APIView):
                         refresh_file_lock(request)
                     else:
                         unlock_file(request)
-                        try:
-                            AlibabaUserEditFile.objects.complete_end_edit_info(request_user,
-                                    repo_id, file_path, x_wopi_lock)
-                        except Exception as e:
-                            logger.error(e)
 
                     return HttpResponse()
             else:
