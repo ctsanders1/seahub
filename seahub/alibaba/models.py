@@ -244,3 +244,41 @@ class AlibabaRepoOwnerChain(models.Model):
     class Meta:
         managed = False
         db_table = 'alibaba_repoownerchain'
+
+
+class AlibabaUserEditFileManager(models.Manager):
+
+    def get_edit_info_by_unique_id(self, unique_id):
+
+        info = self.filter(wopi_lock=unique_id)[0]
+        return info
+
+    def add_start_edit_info(self, username, repo_id, file_path, unique_id):
+
+        info = self.model(user=username, repo_id=repo_id, path=file_path,
+                wopi_lock=unique_id)
+        info.save(using=self._db)
+        return info
+
+    def complete_end_edit_info(self, unique_id):
+
+        info = self.get_edit_info_by_unique_id(unique_id)
+        info.end_timestamp = timezone.now()
+        info.save(using=self._db)
+        return info
+
+
+class AlibabaUserEditFile(models.Model):
+    id = models.BigAutoField(primary_key=True)
+    user = models.CharField(max_length=191)
+    repo_id = models.CharField(max_length=36)
+    path = models.TextField()
+    start_timestamp = models.DateTimeField(default=timezone.now)
+    end_timestamp = models.DateTimeField(blank=True, null=True)
+    wopi_lock = models.TextField()
+
+    objects = AlibabaUserEditFileManager()
+
+    class Meta:
+        managed = False
+        db_table = 'alibaba_usereditfile'
