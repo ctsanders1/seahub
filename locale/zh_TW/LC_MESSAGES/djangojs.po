@@ -198,13 +198,13 @@ msgstr ""
 #: static/scripts/app/models/deleted-repo.js:19
 #: static/scripts/app/models/repo.js:59 static/scripts/common.js:343
 msgid "Encrypted library"
-msgstr "加密資料庫"
+msgstr "加密文件庫"
 
 #: static/scripts/app/models/deleted-repo.js:21
 #: static/scripts/app/models/repo.js:61 static/scripts/common.js:347
 #: static/scripts/sysadmin-app/models/trash-repo.js:14
 msgid "Read-Write library"
-msgstr "可讀寫資料庫"
+msgstr "可讀寫文件庫"
 
 #: static/scripts/app/models/dirent.js:113 static/scripts/app/views/dir.js:682
 #: static/scripts/app/views/dir.js:752
@@ -247,7 +247,7 @@ msgstr "兩次輸入的密碼不一致"
 
 #: static/scripts/app/models/repo.js:63 static/scripts/common.js:345
 msgid "Read-Only library"
-msgstr "唯讀資料庫"
+msgstr "唯讀文件庫"
 
 #: static/scripts/app/models/share-admin-folder.js:25
 #: static/scripts/app/models/share-admin-repo.js:22
@@ -382,7 +382,7 @@ msgstr ""
 
 #: static/scripts/app/views/dialogs/repo-change-password.js:26
 msgid "Change Password of Library {placeholder}"
-msgstr "更改資料庫 {placeholder} 密碼"
+msgstr "更改文件庫 {placeholder} 密碼"
 
 #: static/scripts/app/views/dialogs/repo-change-password.js:50
 msgid "Please enter the old password"
@@ -406,7 +406,7 @@ msgstr "兩次輸入的新密碼不一致"
 
 #: static/scripts/app/views/dialogs/repo-change-password.js:87
 msgid "Successfully changed library password."
-msgstr "資料庫密碼重置成功。"
+msgstr "文件庫密碼重置成功。"
 
 #: static/scripts/app/views/dialogs/repo-folder-perm-admin.js:91
 msgid "{placeholder} Folder Permission"
@@ -424,7 +424,7 @@ msgstr "搜索用戶或輸入電子郵件，然後按Enter"
 
 #: static/scripts/app/views/dialogs/repo-folder-perm-admin.js:141
 msgid "Select a group"
-msgstr "選擇一個群組"
+msgstr "選擇一個團隊"
 
 #: static/scripts/app/views/dialogs/repo-folder-perm-admin.js:143
 msgid "You can only select 1 item"
@@ -440,7 +440,7 @@ msgstr "{placeholder} 歷史設置"
 
 #: static/scripts/app/views/dialogs/repo-history-settings.js:130
 msgid "Successfully set library history."
-msgstr "成功設置資料庫歷史。"
+msgstr "成功設置文件庫歷史。"
 
 #: static/scripts/app/views/dialogs/repo-share-link-admin.js:65
 msgid "{placeholder} Share Links"
@@ -710,7 +710,7 @@ msgstr "設置 {placeholder} 權限"
 #: static/scripts/app/views/folder-perm.js:126
 #: static/scripts/app/views/share.js:842
 msgid "Select groups"
-msgstr "選擇群組"
+msgstr "選擇團隊"
 
 #: static/scripts/app/views/folder-share-item.js:125
 msgid "Edit failed"
@@ -754,7 +754,7 @@ msgstr "您不能選擇更多項"
 msgid ""
 "Successfully transferred the group. You are now a normal member of the "
 "group."
-msgstr "成功轉讓群組。您現在已成為群主的普通成員。"
+msgstr "成功轉讓團隊。您現在已成為群主的普通成員。"
 
 #: static/scripts/app/views/group-settings.js:238
 msgid "Please choose a CSV file"
@@ -766,19 +766,19 @@ msgstr "導入成功。"
 
 #: static/scripts/app/views/group-settings.js:292
 msgid "Dismiss Group"
-msgstr "解散群組"
+msgstr "解散團隊"
 
 #: static/scripts/app/views/group-settings.js:293
 msgid "Really want to dismiss this group?"
-msgstr "確定要解散該群組嗎？"
+msgstr "確定要解散該團隊嗎？"
 
 #: static/scripts/app/views/group-settings.js:321
 msgid "Quit Group"
-msgstr "退出群組"
+msgstr "退出團隊"
 
 #: static/scripts/app/views/group-settings.js:322
 msgid "Are you sure you want to quit this group?"
-msgstr "確定要退出該群組嗎？"
+msgstr "確定要退出該團隊嗎？"
 
 #: static/scripts/app/views/invitation.js:37
 #: static/scripts/sysadmin-app/views/address-book-group-item.js:57
@@ -813,7 +813,7 @@ msgstr "重新整理"
 #: static/scripts/sysadmin-app/views/repo.js:65
 #: static/scripts/sysadmin-app/views/trash-repo.js:28
 msgid "Delete Library"
-msgstr "刪除資料庫"
+msgstr "刪除文件庫"
 
 #: static/scripts/app/views/repo.js:96
 #: static/scripts/sysadmin-app/views/address-book-group-item.js:47
@@ -834,12 +834,12 @@ msgstr "刪除成功。"
 #: static/scripts/app/views/repo.js:237
 #: static/scripts/sysadmin-app/views/repo.js:97
 msgid "Transfer Library {library_name} To"
-msgstr "轉移資料庫 {library_name} 給"
+msgstr "轉移文件庫 {library_name} 給"
 
 #: static/scripts/app/views/repo.js:276
 #: static/scripts/sysadmin-app/views/repo.js:135
 msgid "Successfully transferred the library."
-msgstr "資料庫轉讓成功。"
+msgstr "文件庫轉讓成功。"
 
 #: static/scripts/app/views/repo.js:424
 msgid "Successfully added label(s) for library {placeholder}"
@@ -937,7 +937,7 @@ msgstr "加載失敗"
 
 #: static/scripts/common.js:756
 msgid "Search groups"
-msgstr "查找群組"
+msgstr "查找團隊"
 
 #: static/scripts/common.js:1091
 msgid "Packaging..."
@@ -968,39 +968,39 @@ msgstr ""
 
 #: static/scripts/sysadmin-app/views/admin-operation-log.js:40
 msgid "Create Library"
-msgstr "創建資料庫"
+msgstr "創建文件庫"
 
 #: static/scripts/sysadmin-app/views/admin-operation-log.js:41
 msgid "Created library {library_name} with {owner} as its owner"
-msgstr "創建資料庫 {library_name} 由{owner}為擁有者"
+msgstr "創建文件庫 {library_name} 由{owner}為擁有者"
 
 #: static/scripts/sysadmin-app/views/admin-operation-log.js:52
 msgid "Deleted library {library_name}"
-msgstr "刪除資料庫 {library_name}"
+msgstr "刪除文件庫 {library_name}"
 
 #: static/scripts/sysadmin-app/views/admin-operation-log.js:57
 msgid "Transfer Library"
-msgstr "轉讓資料庫"
+msgstr "轉讓文件庫"
 
 #: static/scripts/sysadmin-app/views/admin-operation-log.js:58
 msgid "Transferred library {library_name} from {user_from} to {user_to}"
-msgstr "轉讓資料庫 {library_name} 由 {user_from} 到 {user_to}"
+msgstr "轉讓文件庫 {library_name} 由 {user_from} 到 {user_to}"
 
 #: static/scripts/sysadmin-app/views/admin-operation-log.js:69
 msgid "Create Group"
-msgstr "建立群組"
+msgstr "建立團隊"
 
 #: static/scripts/sysadmin-app/views/admin-operation-log.js:70
 msgid "Created group {group_name}"
-msgstr "建立群組 {group_name}"
+msgstr "建立團隊 {group_name}"
 
 #: static/scripts/sysadmin-app/views/admin-operation-log.js:74
 msgid "Transfer Group"
-msgstr "轉讓群組"
+msgstr "轉讓團隊"
 
 #: static/scripts/sysadmin-app/views/admin-operation-log.js:75
 msgid "Transferred group {group_name} from {user_from} to {user_to}"
-msgstr "轉讓群組 {group_name} 由 {user_from} 到 {user_to}"
+msgstr "轉讓團隊 {group_name} 由 {user_from} 到 {user_to}"
 
 #: static/scripts/sysadmin-app/views/admin-operation-log.js:82
 #: static/scripts/sysadmin-app/views/group.js:30
@@ -1009,7 +1009,7 @@ msgstr "删除群组"
 
 #: static/scripts/sysadmin-app/views/admin-operation-log.js:83
 msgid "Deleted group {group_name}"
-msgstr "已刪除群組 {group_name}"
+msgstr "已刪除團隊 {group_name}"
 
 #: static/scripts/sysadmin-app/views/admin-operation-log.js:88
 msgid "Add User"
@@ -1041,7 +1041,7 @@ msgstr "成功刪除成員 {placeholder}"
 
 #: static/scripts/sysadmin-app/views/group-repo.js:28
 msgid "Unshare Library"
-msgstr "取消共享資料庫"
+msgstr "取消共享文件庫"
 
 #: static/scripts/sysadmin-app/views/group-repo.js:29
 #, javascript-format
@@ -1050,24 +1050,24 @@ msgstr "確定要取消共享 %s 嗎？"
 
 #: static/scripts/sysadmin-app/views/group-repo.js:42
 msgid "Successfully unshared library {placeholder}"
-msgstr "成功取消共享資料庫 {placeholder}"
+msgstr "成功取消共享文件庫 {placeholder}"
 
 #: static/scripts/sysadmin-app/views/group.js:64
 msgid "Transfer Group {group_name} To"
-msgstr "將群組 {group_name} 轉讓給"
+msgstr "將團隊 {group_name} 轉讓給"
 
 #: static/scripts/sysadmin-app/views/group.js:101
 msgid "Successfully transferred the group."
-msgstr "群組轉讓成功。"
+msgstr "團隊轉讓成功。"
 
 #: static/scripts/sysadmin-app/views/search-trash-repos.js:46
 msgid "Delete Library By Owner"
-msgstr "通過擁有者刪除資料庫"
+msgstr "通過擁有者刪除文件庫"
 
 #: static/scripts/sysadmin-app/views/search-trash-repos.js:47
 #, javascript-format
 msgid "Are you sure you want to delete all %s's libraries?"
-msgstr "確定要刪除所有 %s 的資料庫嗎？"
+msgstr "確定要刪除所有 %s 的文件庫嗎？"
 
 #: static/scripts/sysadmin-app/views/trash-repo.js:29
 #, javascript-format
@@ -1076,7 +1076,7 @@ msgstr "確定要完全刪除 %s 嗎？"
 
 #: static/scripts/sysadmin-app/views/trash-repo.js:58
 msgid "Restore Library"
-msgstr "還原資料庫"
+msgstr "還原文件庫"
 
 #: static/scripts/sysadmin-app/views/trash-repo.js:59
 #, javascript-format

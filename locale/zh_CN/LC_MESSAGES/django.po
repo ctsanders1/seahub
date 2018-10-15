@@ -82,45 +82,45 @@ msgstr "该名称已存在。"
 
 #: seahub/api2/endpoints/admin/address_book/groups.py:233
 msgid "There are libraries in this department."
-msgstr "部门中有资料库。"
+msgstr "部门中有文件库。"
 
 #: seahub/api2/endpoints/admin/address_book/groups.py:237
 msgid "There are sub-departments in this department."
-msgstr "子部门中有资料库。"
+msgstr "子部门中有文件库。"
 
 #: seahub/api2/endpoints/admin/default_library.py:31
 #: seahub/api2/endpoints/admin/default_library.py:32
 #: seahub/views/__init__.py:639 seahub/views/__init__.py:640
 #: seahub/views/__init__.py:645 seahub/views/__init__.py:646
 msgid "My Library"
-msgstr "私人资料库"
+msgstr "私人文件库"
 
 #: seahub/api2/endpoints/admin/groups.py:118
 #: seahub/api2/endpoints/groups.py:156 seahub/api2/endpoints/groups.py:232
 #: seahub/group/forms.py:36
 msgid ""
 "Group name can only contain letters, numbers, blank, hyphen or underscore"
-msgstr "群组名称只能包含字母、数字、空格、中划线或下划线"
+msgstr "团队名称只能包含字母、数字、空格、中划线或下划线"
 
 #: seahub/api2/endpoints/admin/groups.py:123
 #: seahub/api2/endpoints/groups.py:161 seahub/api2/endpoints/groups.py:237
 msgid "There is already a group with that name."
-msgstr "已有同名群组"
+msgstr "已有同名团队"
 
 #: seahub/api2/endpoints/admin/groups.py:199
 #: seahub/api2/endpoints/groups.py:262
 #, python-format
 msgid "User %s is already group owner."
-msgstr "用户 %s 已经是群组拥有者。"
+msgstr "用户 %s 已经是团队拥有者。"
 
 #: seahub/api2/endpoints/admin/libraries.py:226 seahub/views/sysadmin.py:1764
 msgid "System library can not be deleted."
-msgstr "系统资料库无法被删除。"
+msgstr "系统文件库无法被删除。"
 
 #: seahub/api2/endpoints/admin/shares.py:181
 #, python-format
 msgid "User %s is already library owner."
-msgstr "用户 %s 已经是资料库拥有者。"
+msgstr "用户 %s 已经是文件库拥有者。"
 
 #: seahub/api2/endpoints/admin/shares.py:189
 #: seahub/api2/endpoints/invitations.py:49
@@ -236,7 +236,7 @@ msgstr "标签只能包含字母，数字，点，中划线或下划线。"
 #: seahub/api2/endpoints/group_members.py:289 seahub/views/ajax.py:1399
 #, python-format
 msgid "User %s is already a group member."
-msgstr "用户 %s 已经是群组成员。"
+msgstr "用户 %s 已经是团队成员。"
 
 #: seahub/api2/endpoints/group_members.py:99
 #: seahub/api2/endpoints/group_members.py:298 seahub/api2/views.py:1455
@@ -297,7 +297,7 @@ msgstr "服务器内部错误"
 
 #: seahub/api2/endpoints/repo_set_password.py:73 seahub/api2/views.py:3500
 msgid "Decrypt library error"
-msgstr "解密资料库出错"
+msgstr "解密文件库出错"
 
 #: seahub/api2/endpoints/repo_set_password.py:127
 msgid "Wrong old password"
@@ -644,7 +644,7 @@ msgstr "备注"
 
 #: seahub/base/decorators.py:72
 msgid "Files in this library can not be viewed online."
-msgstr "该资料库中的文件无法在线查看。"
+msgstr "该文件库中的文件无法在线查看。"
 
 #: seahub/base/management/commands/createsuperuser.py:26
 msgid "Enter a valid e-mail address."
@@ -1013,7 +1013,7 @@ msgstr "添加或修改了"
 #: seahub/base/templatetags/seahub_tags.py:150
 #: seahub/base/templatetags/seahub_tags.py:221
 msgid "Reverted library to status at"
-msgstr "资料库内容还原到"
+msgstr "文件库内容还原到"
 
 #: seahub/base/templatetags/seahub_tags.py:153
 #: seahub/base/templatetags/seahub_tags.py:224
@@ -1029,7 +1029,7 @@ msgstr "还原已删除的目录"
 #: seahub/base/templatetags/seahub_tags.py:159
 #: seahub/base/templatetags/seahub_tags.py:230 seahub/views/ajax.py:1266
 msgid "Changed library name or description"
-msgstr "修改了资料库名称或描述"
+msgstr "修改了文件库名称或描述"
 
 #: seahub/base/templatetags/seahub_tags.py:161
 #: seahub/base/templatetags/seahub_tags.py:232
@@ -1040,7 +1040,7 @@ msgstr "系统自动合并修改"
 #: seahub/base/templatetags/seahub_tags.py:234
 #: seahub/templates/js/templates.html:1972
 msgid "Created library"
-msgstr "创建了资料库"
+msgstr "创建了文件库"
 
 #: seahub/base/templatetags/seahub_tags.py:309
 #: seahub/base/templatetags/seahub_tags.py:345
@@ -1348,7 +1348,7 @@ msgstr "你还没有联系人"
 msgid ""
 "Add your contacts so you can quickly share libraries and send file shared "
 "link."
-msgstr "联系人用来在共享资料库和发送文件外链时的快速补全。"
+msgstr "联系人用来在共享文件库和发送文件外链时的快速补全。"
 
 #: seahub/contacts/templates/contacts/contact_list.html:46
 #: seahub/contacts/templates/contacts/contact_list.html:55
@@ -1618,7 +1618,7 @@ msgstr "名称 \"%s\" 含有无效字符"
 
 #: seahub/forms.py:162
 msgid "Library name is required"
-msgstr "资料库名称为必填项"
+msgstr "文件库名称为必填项"
 
 #: seahub/forms.py:164
 msgid "Please enter a number"
@@ -1646,24 +1646,24 @@ msgstr "创建失败"
 
 #: seahub/group/error_msg.py:12
 msgid "The group has already created in this org."
-msgstr "群组在该团体内已经存在。"
+msgstr "团队在该团体内已经存在。"
 
 #: seahub/group/error_msg.py:13
 msgid "Failed to create org group."
-msgstr "创建团体群组失败。"
+msgstr "创建团体团队失败。"
 
 #: seahub/group/error_msg.py:16
 msgid "Permission error: only group staff can add member"
-msgstr "只有群组管理员可以添加成员。"
+msgstr "只有团队管理员可以添加成员。"
 
 #: seahub/group/error_msg.py:17 seahub/group/error_msg.py:23
 #: seahub/views/file.py:447
 msgid "Group does not exist"
-msgstr "群组不存在。"
+msgstr "团队不存在。"
 
 #: seahub/group/error_msg.py:18
 msgid "Group is full"
-msgstr "群组已满，无法再添加成员。"
+msgstr "团队已满，无法再添加成员。"
 
 #: seahub/group/error_msg.py:19
 msgid "Failed to add member to group"
@@ -1671,7 +1671,7 @@ msgstr "添加成员失败。"
 
 #: seahub/group/error_msg.py:22
 msgid "Only group staff can remove member"
-msgstr "只有群组管理员可以删除成员。"
+msgstr "只有团队管理员可以删除成员。"
 
 #: seahub/group/error_msg.py:24
 msgid "Can not remove myself"
@@ -1679,7 +1679,7 @@ msgstr "无法删除自己"
 
 #: seahub/group/forms.py:29
 msgid "Group name can't be empty"
-msgstr "群组名称不能为空"
+msgstr "团队名称不能为空"
 
 #: seahub/group/forms.py:30
 msgid "Group name is too long (maximum is 255 characters)"
@@ -1707,7 +1707,7 @@ msgstr "你好，"
 msgid ""
 "%(escaped_nickname)s invited you to join group %(grp_name)s on "
 "%(site_name)s: "
-msgstr "%(escaped_nickname)s 邀请你加入 %(site_name)s 上的群组 %(grp_name)s： "
+msgstr "%(escaped_nickname)s 邀请你加入 %(site_name)s 上的团队 %(grp_name)s： "
 
 #: seahub/group/templates/group/group_base.html:12
 #: seahub/help/templates/help/base.html:9
@@ -1742,7 +1742,7 @@ msgstr "关闭"
 msgid ""
 "%(user)s want to join to Group \"%(group_name)s\", here is the verification "
 "message: "
-msgstr "%(user)s 申请加入到群组 “%(group_name)s”, 验证信息如下："
+msgstr "%(user)s 申请加入到团队 “%(group_name)s”, 验证信息如下："
 
 #: seahub/group/templates/group/group_join_email.html:6
 #: seahub/templates/email_base.html:9
@@ -1770,7 +1770,7 @@ msgstr "创建"
 
 #: seahub/group/templates/group/group_wiki.html:34
 msgid "This group currently has no wiki"
-msgstr "该群组目前还没创建Wiki"
+msgstr "该团队目前还没创建Wiki"
 
 #: seahub/group/templates/group/group_wiki.html:35
 #: seahub/templates/wiki/personal_wiki.html:35
@@ -1780,7 +1780,7 @@ msgid ""
 "contents of wiki is stored in a normal library with pre-defined file/folder "
 "structure. This enables you to edit your wiki in your desktop and then sync "
 "back to the server."
-msgstr "Seafile Wiki 能让你以一种非常简单的方式管理你的知识。Wiki 的内容以预定义的文件/目录结构存储在一个普通的资料库中，这样便可以在本地编辑，然后同步回服务器。"
+msgstr "Seafile Wiki 能让你以一种非常简单的方式管理你的知识。Wiki 的内容以预定义的文件/目录结构存储在一个普通的文件库中，这样便可以在本地编辑，然后同步回服务器。"
 
 #: seahub/group/templates/group/group_wiki.html:37
 #: seahub/templates/wiki/personal_wiki.html:36
@@ -1790,7 +1790,7 @@ msgstr "现在创建Wiki"
 #: seahub/group/templates/group/group_wiki.html:39
 #: seahub/templates/wiki/personal_wiki.html:38
 msgid "Choose a library as wiki"
-msgstr "从已有资料库选择"
+msgstr "从已有文件库选择"
 
 #: seahub/group/templates/group/group_wiki.html:44
 #: seahub/templates/wiki/personal_wiki.html:42
@@ -1812,12 +1812,12 @@ msgstr "Wiki 页面"
 #: seahub/group/templates/group/group_wiki.html:54
 #: seahub/templates/wiki/personal_wiki.html:52
 msgid "Choose a library as wiki:"
-msgstr "选择一个资料库作为维基："
+msgstr "选择一个文件库作为维基："
 
 #: seahub/group/templates/group/group_wiki.html:59
 #: seahub/templates/wiki/personal_wiki.html:57
 msgid "Please click and choose a library."
-msgstr "请选择资料库。"
+msgstr "请选择文件库。"
 
 #: seahub/group/templates/group/group_wiki.html:61
 #: seahub/organizations/templates/organizations/org_repo_admin.html:34
@@ -1928,15 +1928,15 @@ msgstr "没有权限"
 #: seahub/group/views.py:192
 #, python-format
 msgid "You are invited to join a group on %s"
-msgstr "你被邀请加入 %s 上的一个群组"
+msgstr "你被邀请加入 %s 上的一个团队"
 
 #: seahub/group/views.py:208
 msgid "Failed to create: the group does not exist."
-msgstr "创建失败：该群组不存在。"
+msgstr "创建失败：该团队不存在。"
 
 #: seahub/group/views.py:213
 msgid "Failed to create: you are not in the group."
-msgstr "创建失败：你不在该群组中。"
+msgstr "创建失败：你不在该团队中。"
 
 #: seahub/group/views.py:241 seahub/group/views.py:263
 #: seahub/group/views.py:420 seahub/views/wiki.py:175
@@ -1946,7 +1946,7 @@ msgstr "创建失败"
 #: seahub/group/views.py:248 seahub/group/views.py:269
 #: seahub/group/views.py:426
 msgid "Failed to create: internal error."
-msgstr "创建团体群组失败。"
+msgstr "创建团体团队失败。"
 
 #: seahub/group/views.py:308 seahub/group/views.py:492 seahub/views/wiki.py:74
 #: seahub/views/wiki.py:236
@@ -1970,7 +1970,7 @@ msgstr "创建首页失败，请稍后再试"
 
 #: seahub/group/views.py:449 seahub/views/wiki.py:197
 msgid "Failed to set wiki library."
-msgstr "设置维基资料库失败。"
+msgstr "设置维基文件库失败。"
 
 #: seahub/group/views.py:482 seahub/group/views.py:508
 #: seahub/group/views.py:526 seahub/views/wiki.py:226 seahub/views/wiki.py:249
@@ -2006,7 +2006,7 @@ msgstr "选择性同步子文件夹"
 
 #: seahub/help/templates/help/base.html:15
 msgid "Unsync and resync libraries"
-msgstr "解除同步与重新同步资料库"
+msgstr "解除同步与重新同步文件库"
 
 #: seahub/help/templates/help/base.html:16
 msgid "Setting sync interval"
@@ -2031,14 +2031,14 @@ msgstr "安全与加密"
 
 #: seahub/help/templates/help/base.html:23
 msgid "How to use encrypted libraries"
-msgstr "怎样使用加密资料库"
+msgstr "怎样使用加密文件库"
 
 #: seahub/help/templates/help/conflicts.html:7
 msgid ""
 "Once you and your friends sync a shared file library onto your computers, "
 "you may add, delete or edit files in the library together. Every change you "
 "make to the library would be automatically synced to others' computers."
-msgstr "一旦你和你的朋友们同步了一个共享的资料库到你们的电脑上，你们便可以一起添加，删除，或者修改这个资料库中的文件。你对该资料库的每个修改都将会自动同步到其他人的电脑上。"
+msgstr "一旦你和你的朋友们同步了一个共享的文件库到你们的电脑上，你们便可以一起添加，删除，或者修改这个文件库中的文件。你对该文件库的每个修改都将会自动同步到其他人的电脑上。"
 
 #: seahub/help/templates/help/conflicts.html:9
 msgid ""
@@ -2078,7 +2078,7 @@ msgstr "如需更改代理设置，点击系统通知区域的 Seafile 图标。
 
 #: seahub/help/templates/help/encrypted_libraries.html:6
 msgid "How to Use Encrypted Libraries"
-msgstr "怎样使用加密资料库"
+msgstr "怎样使用加密文件库"
 
 #: seahub/help/templates/help/encrypted_libraries.html:8
 msgid ""
@@ -2087,18 +2087,18 @@ msgid ""
 "libraries are encrypted on client side. The encryption password is not "
 "stored on the server. So even the server administrator can't access your "
 "file contents."
-msgstr "Seafile 提供客户端侧、端到端的数据加密。您可以使用此功能创建加密资料库。加密资料库中的文件是在客户端进行加密的，密码也并不存储在服务器上。因此，即使服务器管理员也无法访问您的文件内容。"
+msgstr "Seafile 提供客户端侧、端到端的数据加密。您可以使用此功能创建加密文件库。加密文件库中的文件是在客户端进行加密的，密码也并不存储在服务器上。因此，即使服务器管理员也无法访问您的文件内容。"
 
 #: seahub/help/templates/help/encrypted_libraries.html:10
 msgid "When creating an encrypted library:"
-msgstr "当创建加密资料库时："
+msgstr "当创建加密文件库时："
 
 #: seahub/help/templates/help/encrypted_libraries.html:12
 msgid ""
 "If you create an encrypted library in the web app, the password is sent to "
 "the server. The server use this password to create the library. But it "
 "doesn't store the plain text password."
-msgstr "如果你是通过 web 来创建加密资料库，密码会被发送到服务器。服务器通过这个密码来创建加密资料库，但并不保存密码明文。"
+msgstr "如果你是通过 web 来创建加密文件库，密码会被发送到服务器。服务器通过这个密码来创建加密文件库，但并不保存密码明文。"
 
 #: seahub/help/templates/help/encrypted_libraries.html:13
 #, python-format
@@ -2106,11 +2106,11 @@ msgid ""
 "If you create an encrypted library from a local folder with the desktop "
 "client (see <a href=\"%(SITE_ROOT)shelp/install/\">file syncing</a>), the "
 "password is not sent to the server."
-msgstr "如果你在桌面客户端上通过一个本地文件夹来创建加密资料库，(参考 <a href=\"%(SITE_ROOT)shelp/install/\">文件同步</a>)，密码不会被发送到服务器。"
+msgstr "如果你在桌面客户端上通过一个本地文件夹来创建加密文件库，(参考 <a href=\"%(SITE_ROOT)shelp/install/\">文件同步</a>)，密码不会被发送到服务器。"
 
 #: seahub/help/templates/help/encrypted_libraries.html:17
 msgid "When you access the encrypted library:"
-msgstr "当你访问加密资料库时："
+msgstr "当你访问加密文件库时："
 
 #: seahub/help/templates/help/encrypted_libraries.html:19
 msgid ""
@@ -2124,7 +2124,7 @@ msgid ""
 "If you use desktop client to sync the library, the password is not sent to "
 "the server. The client decrypt and encrypt file contents locally. The plain "
 "text password is not stored on the client disk too."
-msgstr "如果你通过桌面客户端来同步资料库，密码并不会被发送到服务器。桌面客户端只在本地加密解密文件内容，密码明文也不会存储在本地磁盘上。"
+msgstr "如果你通过桌面客户端来同步文件库，密码并不会被发送到服务器。桌面客户端只在本地加密解密文件内容，密码明文也不会存储在本地磁盘上。"
 
 #: seahub/help/templates/help/encrypted_libraries.html:21
 msgid ""
@@ -2136,14 +2136,14 @@ msgstr "ISO 客户端从 2.1.6 版本、Android 客户端从 2.1.0 版本支持�
 msgid ""
 "Note that encrypted library only encrypt the contents of the files, but not "
 "the folder and file names."
-msgstr "注意加密资料库只加密文件内容，并不会加密目录名和文件名。"
+msgstr "注意加密文件库只加密文件内容，并不会加密目录名和文件名。"
 
 #: seahub/help/templates/help/encrypted_libraries.html:27
 msgid ""
 "More technical details of encrypted library can be found at <a "
 "href=\"http://manual.seafile.com/security/security_features.html\">Seafile "
 "Manual</a>."
-msgstr "加密资料库更过技术细节请参看 <a href=\"http://manual.seafile.com/security/security_features.html\">Seafile Manual</a>."
+msgstr "加密文件库更过技术细节请参看 <a href=\"http://manual.seafile.com/security/security_features.html\">Seafile Manual</a>."
 
 #: seahub/help/templates/help/ignore.html:6
 msgid "Excluding files/folders from syncing"
@@ -2156,7 +2156,7 @@ msgid ""
 "library. This special file specifies the files and folders that Seafile "
 "should not sync. Each line in a ignore.txt file specifies a pattern. The "
 "following pattern format are supported."
-msgstr "有的时候你不想同步一个资料库中的某些文件或者目录。为此，你可以在该资料库的根目录中创建一个名为 seafile-ignore.txt 的文件。在这个文件中，你可以指定哪些文件和目录将不被同步。文件中的每一行都指定一个模式。目前支持的模式格式如下。"
+msgstr "有的时候你不想同步一个文件库中的某些文件或者目录。为此，你可以在该文件库的根目录中创建一个名为 seafile-ignore.txt 的文件。在这个文件中，你可以指定哪些文件和目录将不被同步。文件中的每一行都指定一个模式。目前支持的模式格式如下。"
 
 #: seahub/help/templates/help/ignore.html:10
 msgid "A blank line matches no files."
@@ -2253,25 +2253,25 @@ msgstr "在你的私有 Seafile 服务器或者我们的公共服务器上添加
 
 #: seahub/help/templates/help/install.html:18
 msgid "3. Sync a library"
-msgstr "3. 同步一个资料库"
+msgstr "3. 同步一个文件库"
 
 #: seahub/help/templates/help/install.html:20
 msgid "Click the \"Sync this library\" button to sync it with a local folder."
-msgstr "点击“同步该资料库”按钮将该资料库与本地文件夹同步。"
+msgstr "点击“同步该文件库”按钮将该文件库与本地文件夹同步。"
 
 #: seahub/help/templates/help/install.html:21
 msgid ""
 "Then you add some files into the library. They will be automatically synced "
 "with cloud platform."
-msgstr "往该资料库中添加文件。它们将会被自动同步到云平台。"
+msgstr "往该文件库中添加文件。它们将会被自动同步到云平台。"
 
 #: seahub/help/templates/help/install.html:26
 msgid "4. (Optional) Create a library"
-msgstr "4. （可选）创建一个资料库"
+msgstr "4. （可选）创建一个文件库"
 
 #: seahub/help/templates/help/install.html:28
 msgid "You can also create a library from a local folder."
-msgstr "你也可以从一个本地目录创建一个资料库。"
+msgstr "你也可以从一个本地目录创建一个文件库。"
 
 #: seahub/help/templates/help/install.html:34
 msgid "5. Browse files on the cloud"
@@ -2282,7 +2282,7 @@ msgid ""
 "In some occasions, you want to modify files on the cloud directly without "
 "syncing them. Seafile client comes with a \"cloud file browser\" to meet "
 "this need. Click an unsynced library will open the cloud file browser."
-msgstr "在某些情况下，你只想修改云端文件但并不想将其同步下来。 Seafile 客户端自带的“云端文件浏览器”可以满足这一需求。单击某个未同步的资料库即可打开云端文件浏览器。"
+msgstr "在某些情况下，你只想修改云端文件但并不想将其同步下来。 Seafile 客户端自带的“云端文件浏览器”可以满足这一需求。单击某个未同步的文件库即可打开云端文件浏览器。"
 
 #: seahub/help/templates/help/selective_sync.html:6
 msgid "Selective Sync Sub-folders"
@@ -2294,7 +2294,7 @@ msgid ""
 "currently only interested in a sub-folder inside one library. If your "
 "Seafile server is Pro edition, you can selectively sync a sub-folder in a "
 "library, instead of syncing the entire library."
-msgstr "你可能在 Seafile 服务器上有一个很大的资料库，但是只对其中某一个子目录感兴趣。如果你使用 Seafile 专业版，可以选择性同步子目录，而不必同步整个资料库。"
+msgstr "你可能在 Seafile 服务器上有一个很大的文件库，但是只对其中某一个子目录感兴趣。如果你使用 Seafile 专业版，可以选择性同步子目录，而不必同步整个文件库。"
 
 #: seahub/help/templates/help/selective_sync.html:10
 msgid ""
@@ -2302,13 +2302,13 @@ msgid ""
 "which hasn't been synced. Navigate into the parent folder of that sub-"
 "folder. Right click on the sub-folder. Choose \"Sync this folder\" in the "
 "pop-up menu."
-msgstr "如果想要只同步一个子目录，双击未同步资料库，打开云端文件浏览器后，进入到子目录所在目录，右击此子目录，在弹框中选择 “同步该目录”即可。"
+msgstr "如果想要只同步一个子目录，双击未同步文件库，打开云端文件浏览器后，进入到子目录所在目录，右击此子目录，在弹框中选择 “同步该目录”即可。"
 
 #: seahub/help/templates/help/selective_sync.html:14
 msgid ""
 "After syncing the sub-folder, you can see its syncing status in the \"Synced"
 " Libraries\" group in the client's main window."
-msgstr "同步子目录后，你可以在客户端主界面中的 “已同步资料库” 中看到同步状态。"
+msgstr "同步子目录后，你可以在客户端主界面中的 “已同步文件库” 中看到同步状态。"
 
 #: seahub/help/templates/help/sync_existing.html:6
 msgid "Syncing With an Existing Folder"
@@ -2325,13 +2325,13 @@ msgid ""
 "overwritten or lost. The merge will produce some <a "
 "href=\"%(SITE_ROOT)shelp/conflicts/\">conflict files</a> if file contents "
 "are different in the local folder and the library. "
-msgstr "有时候你已经在 Seafile 服务器上有一个资料库 (别人共享给你的，或者你在另一台电脑上上传的)，你可以在将此资料库同步到已有文件夹下。本地文件夹需要和资料库有一样的名字，本地文件夹里的文件会和资料库中的文件合并，但不论本地文件夹里还是资料库里的文件都不会被覆盖或者删除。但如果文件内容不同可能会产生  <a href=\"%(SITE_ROOT)shelp/conflicts/\">冲突文件</a>。"
+msgstr "有时候你已经在 Seafile 服务器上有一个文件库 (别人共享给你的，或者你在另一台电脑上上传的)，你可以在将此文件库同步到已有文件夹下。本地文件夹需要和文件库有一样的名字，本地文件夹里的文件会和文件库中的文件合并，但不论本地文件夹里还是文件库里的文件都不会被覆盖或者删除。但如果文件内容不同可能会产生  <a href=\"%(SITE_ROOT)shelp/conflicts/\">冲突文件</a>。"
 
 #: seahub/help/templates/help/sync_existing.html:10
 msgid ""
 "To sync a library with an existing folder, right click on the library in "
 "Seafile client's main window and click \"Sync this library\"."
-msgstr "想要通过已有文件夹同步资料库，在 Seafile 客户端主窗口右击这个资料库并点击“同步资料库”。"
+msgstr "想要通过已有文件夹同步文件库，在 Seafile 客户端主窗口右击这个文件库并点击“同步文件库”。"
 
 #: seahub/help/templates/help/sync_existing.html:14
 msgid "In the pop-up dialog, click the \"Sync with an existing folder\" link."
@@ -2339,7 +2339,7 @@ msgstr "在弹框中，点击“同步已有文件夹”链接。"
 
 #: seahub/help/templates/help/sync_existing.html:18
 msgid "Then choose an existing folder to sync with this library."
-msgstr "然后选择一个已有文件夹来同步到这个资料库。"
+msgstr "然后选择一个已有文件夹来同步到这个文件库。"
 
 #: seahub/help/templates/help/sync_interval.html:6
 msgid "Setting Sync Interval"
@@ -2357,7 +2357,7 @@ msgstr "通常 Seafile 客户端会自动检测本地文件夹更改并上传服
 
 #: seahub/help/templates/help/unsync_resync.html:6
 msgid "Unsync and Resync Library"
-msgstr "解除同步与重新同步资料库"
+msgstr "解除同步与重新同步文件库"
 
 #: seahub/help/templates/help/unsync_resync.html:8
 #, python-format
@@ -2368,7 +2368,7 @@ msgid ""
 " you want to sync the library with the local folder again, you can use <a "
 "href=\"%(SITE_ROOT)shelp/sync_existing/\">sync with existing folder</a> "
 "feature."
-msgstr "如果你不想再同步本地文件夹到资料库，你可以解除同步。解除同步后，本地文件夹的更改将不被上传，资料库的更改也不会被下载。如果你想再次同步，可以使用 <a href=\"%(SITE_ROOT)shelp/sync_existing/\">同步已有文件夹</a> 功能。"
+msgstr "如果你不想再同步本地文件夹到文件库，你可以解除同步。解除同步后，本地文件夹的更改将不被上传，文件库的更改也不会被下载。如果你想再次同步，可以使用 <a href=\"%(SITE_ROOT)shelp/sync_existing/\">同步已有文件夹</a> 功能。"
 
 #: seahub/help/templates/help/unsync_resync.html:10
 msgid ""
@@ -2376,7 +2376,7 @@ msgid ""
 "these cases, it's usually helpful to \"resync\" the library. Resync means "
 "unsync and then immediately sync the library with the same folder. You can "
 "find this action in the pop-up menu of the client's main window."
-msgstr "有时因为客户端内部错误会阻塞同步，此时你可以在客户端主窗口，右击此资料库，在弹框中点击 “重新同步”。重新同步是指先解除同步，然后立刻再同步此资料库到同一文件夹。"
+msgstr "有时因为客户端内部错误会阻塞同步，此时你可以在客户端主窗口，右击此文件库，在弹框中点击 “重新同步”。重新同步是指先解除同步，然后立刻再同步此文件库到同一文件夹。"
 
 #: seahub/institutions/templates/institutions/base.html:7
 #: seahub/organizations/templates/organizations/org_admin_base.html:7
@@ -2436,7 +2436,7 @@ msgstr "信息"
 #: seahub/templates/sysadmin/base.html:45
 #: seahub/templates/sysadmin/snippets/sys_org_info_nav.html:5
 msgid "Libraries"
-msgstr "资料库"
+msgstr "文件库"
 
 #: seahub/institutions/templates/institutions/info.html:16
 #: seahub/templates/js/sysadmin-templates.html:177
@@ -2468,7 +2468,7 @@ msgstr "总用户数"
 #: seahub/templates/sysadmin/snippets/sys_org_info_nav.html:4
 #: seahub/templates/sysadmin/userinfo.html:26
 msgid "Groups"
-msgstr "群组"
+msgstr "团队"
 
 #: seahub/institutions/templates/institutions/user_info.html:15
 #: seahub/organizations/templates/organizations/userinfo.html:18
@@ -2482,7 +2482,7 @@ msgstr "个人信息"
 #: seahub/organizations/templates/organizations/userinfo.html:59
 #: seahub/templates/i18n.html:11 seahub/templates/sysadmin/userinfo.html:23
 msgid "Owned Libs"
-msgstr "拥有的资料库"
+msgstr "拥有的文件库"
 
 #: seahub/institutions/templates/institutions/user_info.html:23
 #: seahub/templates/sysadmin/userinfo.html:32
@@ -2623,17 +2623,17 @@ msgstr "已加密"
 #: seahub/templates/sysadmin/userinfo.html:237
 #: seahub/templates/sysadmin/userinfo.html:239
 msgid "library icon"
-msgstr "资料库图标"
+msgstr "文件库图标"
 
 #: seahub/institutions/templates/institutions/user_info.html:96
 #: seahub/templates/sysadmin/userinfo.html:216
 msgid "This user has not created any libraries"
-msgstr "此用户没有创建资料库"
+msgstr "此用户没有创建文件库"
 
 #: seahub/institutions/templates/institutions/user_info.html:121
 #: seahub/templates/sysadmin/userinfo.html:327
 msgid "This user has not created or joined any groups"
-msgstr "此用户没有创建或加入群组"
+msgstr "此用户没有创建或加入团队"
 
 #: seahub/institutions/templates/institutions/user_info.html:146
 #: seahub/templates/sysadmin/sys_inst_info_base.html:55
@@ -2780,7 +2780,7 @@ msgstr "拥有者"
 #: seahub/templates/js/templates.html:2191
 #: seahub/templates/js/templates.html:2194 seahub/views/sysadmin.py:738
 msgid "Member"
-msgstr "群组成员"
+msgstr "团队成员"
 
 #: seahub/institutions/views.py:195 seahub/organizations/views.py:481
 #: seahub/views/sysadmin.py:843
@@ -2871,7 +2871,7 @@ msgstr "新文件  <a href='%(file_link)s'>%(file_name)s</a> 上传到了 <a hre
 msgid ""
 "A file named <strong>%(file_name)s</strong> is uploaded to <strong>Deleted "
 "Library</strong>"
-msgstr "新文件 <strong>%(file_name)s</strong> 上传到<strong>删除的资料库</strong>"
+msgstr "新文件 <strong>%(file_name)s</strong> 上传到<strong>删除的文件库</strong>"
 
 #: seahub/notifications/models.py:620
 #, python-format
@@ -2882,7 +2882,7 @@ msgstr "<a href='%(href)s'>%(group_name)s</a> 有新讨论。"
 #, python-format
 msgid ""
 "%(user)s posted a new discussion in <a href='%(href)s'>%(group_name)s</a>."
-msgstr "%(user)s 在群组 <a href='%(href)s'>%(group_name)s</a> 中发布了一个新的讨论。"
+msgstr "%(user)s 在团队 <a href='%(href)s'>%(group_name)s</a> 中发布了一个新的讨论。"
 
 #: seahub/notifications/models.py:670
 #, python-format
@@ -2890,14 +2890,14 @@ msgid ""
 "User <a href='%(user_profile)s'>%(username)s</a> has asked to join group <a "
 "href='%(href)s'>%(group_name)s</a>, verification message: "
 "%(join_request_msg)s"
-msgstr "用户 <a href='%(user_profile)s'>%(username)s</a> 请求加入到群组 <a href='%(href)s'>%(group_name)s</a>，验证信息：%(join_request_msg)s"
+msgstr "用户 <a href='%(user_profile)s'>%(username)s</a> 请求加入到团队 <a href='%(href)s'>%(group_name)s</a>，验证信息：%(join_request_msg)s"
 
 #: seahub/notifications/models.py:699
 #, python-format
 msgid ""
 "User <a href='%(user_profile)s'>%(group_staff)s</a> has added you to group "
 "<a href='%(href)s'>%(group_name)s</a>"
-msgstr "用户 <a href='%(user_profile)s'>%(group_staff)s</a> 将你加入到群组 <a href='%(href)s'>%(group_name)s</a>"
+msgstr "用户 <a href='%(user_profile)s'>%(group_staff)s</a> 将你加入到团队 <a href='%(href)s'>%(group_name)s</a>"
 
 #: seahub/notifications/models.py:725
 #, python-format
@@ -2950,7 +2950,7 @@ msgstr "时间"
 msgid ""
 "%(user)s posted a new discussion in <a "
 "href=\"%(url_base)s%(grp_url)s\">%(grp_name)s</a>"
-msgstr "%(user)s 在群组 <a href=\"%(url_base)s%(grp_url)s\">%(grp_name)s</a> 中发布了一个新的讨论"
+msgstr "%(user)s 在团队 <a href=\"%(url_base)s%(grp_url)s\">%(grp_name)s</a> 中发布了一个新的讨论"
 
 #: seahub/notifications/templates/notifications/notice_email.html:51
 #, python-format
@@ -2973,14 +2973,14 @@ msgid ""
 "User <a href=\"%(url_base)s%(user_url)s\">%(user)s</a> has asked to join "
 "group <a href=\"%(url_base)s%(grp_url)s\">%(grp_name)s</a>, verification "
 "message: %(msg)s"
-msgstr "用户 <a href=\"%(url_base)s%(user_url)s\">%(user)s</a> 请求加入群组 <a href=\"%(url_base)s%(grp_url)s\">%(grp_name)s</a> , 认证信息: %(msg)s"
+msgstr "用户 <a href=\"%(url_base)s%(user_url)s\">%(user)s</a> 请求加入团队 <a href=\"%(url_base)s%(grp_url)s\">%(grp_name)s</a> , 认证信息: %(msg)s"
 
 #: seahub/notifications/templates/notifications/notice_email.html:63
 #, python-format
 msgid ""
 "User <a href=\"%(url_base)s%(user_url)s\">%(user)s</a> has added you to "
 "group <a href=\"%(url_base)s%(grp_url)s\">%(grp_name)s</a>"
-msgstr "用户 <a href=\"%(url_base)s%(user_url)s\">%(user)s</a> 将你加入到群组 <a href=\"%(url_base)s%(grp_url)s\">%(grp_name)s</a>"
+msgstr "用户 <a href=\"%(url_base)s%(user_url)s\">%(user)s</a> 将你加入到团队 <a href=\"%(url_base)s%(grp_url)s\">%(grp_name)s</a>"
 
 #: seahub/notifications/templates/notifications/notice_email.html:66
 #, python-format
@@ -3006,14 +3006,14 @@ msgid ""
 "%(user)s has shared a folder named <a "
 "href=\"%(url_base)s%(lib_url)s\">%(lib_name)s</a> to group <a "
 "href=\"%(url_base)s%(group_url)s\">%(group_name)s</a>."
-msgstr "%(user)s 共享了一个名为 <a href=\"%(url_base)s%(lib_url)s\">%(lib_name)s</a> 的文件夹到群组 <a href=\"%(url_base)s%(group_url)s\">%(group_name)s</a>。"
+msgstr "%(user)s 共享了一个名为 <a href=\"%(url_base)s%(lib_url)s\">%(lib_name)s</a> 的文件夹到团队 <a href=\"%(url_base)s%(group_url)s\">%(group_name)s</a>。"
 
 #: seahub/notifications/templates/notifications/notice_msg/repo_share_msg.html:1
 #, python-format
 msgid ""
 "%(user)s has shared a library named <a "
 "href=\"%(url_base)s%(lib_url)s\">%(lib_name)s</a> to you."
-msgstr "%(user)s 共享了资料库 <a href=\"%(url_base)s%(lib_url)s\">%(lib_name)s</a> 给你。"
+msgstr "%(user)s 共享了文件库 <a href=\"%(url_base)s%(lib_url)s\">%(lib_name)s</a> 给你。"
 
 #: seahub/notifications/templates/notifications/notice_msg/repo_share_to_group_msg.html:1
 #, python-format
@@ -3021,7 +3021,7 @@ msgid ""
 "%(user)s has shared a library named <a "
 "href=\"%(url_base)s%(lib_url)s\">%(lib_name)s</a> to group <a "
 "href=\"%(url_base)s%(group_url)s\">%(group_name)s</a>."
-msgstr "%(user)s 共享了资料库 <a href=\"%(url_base)s%(lib_url)s\">%(lib_name)s</a> 到群组 <a href=\"%(url_base)s%(group_url)s\">%(group_name)s</a> 中。"
+msgstr "%(user)s 共享了文件库 <a href=\"%(url_base)s%(lib_url)s\">%(lib_name)s</a> 到团队 <a href=\"%(url_base)s%(group_url)s\">%(group_name)s</a> 中。"
 
 #: seahub/notifications/templates/notifications/notification_list.html:8
 msgid "All Notifications"
@@ -3090,7 +3090,7 @@ msgstr "出错了，请联系管理员。"
 
 #: seahub/options/templates/options/set_user_options.html:7
 msgid "Please choose how to view encrypted libraries online:"
-msgstr "请选择查看加密资料库的方式："
+msgstr "请选择查看加密文件库的方式："
 
 #: seahub/options/templates/options/set_user_options.html:10
 msgid "Send passwords to the server."
@@ -3150,11 +3150,11 @@ msgstr "取消"
 
 #: seahub/organizations/templates/organizations/org_admin_group_info.html:11
 msgid "Back to group list"
-msgstr "返回群组列表"
+msgstr "返回团队列表"
 
 #: seahub/organizations/templates/organizations/org_admin_group_info.html:13
 msgid "Group Info"
-msgstr "群组信息"
+msgstr "团队信息"
 
 #: seahub/organizations/templates/organizations/org_admin_group_info.html:19
 #: seahub/organizations/templates/organizations/org_group_admin.html:12
@@ -3185,7 +3185,7 @@ msgstr "共享来源"
 #: seahub/organizations/templates/organizations/org_admin_group_info.html:65
 #: seahub/templates/libraries.html:132
 msgid "No library is shared to this group"
-msgstr "还没有资料库共享到群组"
+msgstr "还没有文件库共享到团队"
 
 #: seahub/organizations/templates/organizations/org_admin_group_info.html:76
 #: seahub/templates/js/templates.html:2055
@@ -3313,7 +3313,7 @@ msgstr "日期"
 #: seahub/templates/sysadmin/settings.html:137
 #: seahub/templates/sysadmin/sys_virus_scan_records.html:11
 msgid "Library"
-msgstr "资料库"
+msgstr "文件库"
 
 #: seahub/organizations/templates/organizations/org_file_audit.html:22
 #: seahub/templates/file_edit.html:407 seahub/templates/js/templates.html:2276
@@ -3419,13 +3419,13 @@ msgstr "未知错误"
 #: seahub/templates/home_base.html:26 seahub/templates/js/templates.html:1477
 #: seahub/templates/js/templates.html:1499
 msgid "All Groups"
-msgstr "所有群组"
+msgstr "所有团队"
 
 #: seahub/organizations/templates/organizations/org_group_admin.html:44
 #: seahub/templates/sysadmin/sys_org_info_group.html:40
 #: seahub/templates/sysadmin/userinfo.html:586
 msgid "Delete Group"
-msgstr "删除群组"
+msgstr "删除团队"
 
 #: seahub/organizations/templates/organizations/org_manage.html:13
 #: seahub/organizations/templates/organizations/org_manage.html:22
@@ -3541,7 +3541,7 @@ msgstr "确认密码"
 #: seahub/organizations/templates/organizations/org_repo_admin.html:7
 #: seahub/templates/js/sysadmin-templates.html:114
 msgid "Search libraries by name..."
-msgstr "根据名称搜索资料库..."
+msgstr "根据名称搜索文件库..."
 
 #: seahub/organizations/templates/organizations/org_repo_admin.html:14
 #: seahub/organizations/templates/organizations/org_user_admin.html:14
@@ -3563,7 +3563,7 @@ msgstr "无"
 #: seahub/organizations/templates/organizations/org_repo_search.html:26
 #: seahub/templates/sysadmin/repo_transfer_form.html:3
 msgid "Transfer Library"
-msgstr "转让资料库"
+msgstr "转让文件库"
 
 #: seahub/organizations/templates/organizations/org_repo_admin.html:29
 #: seahub/organizations/templates/organizations/org_repo_search.html:27
@@ -3575,7 +3575,7 @@ msgstr "转让 %(lib_name)s 给："
 #: seahub/organizations/templates/organizations/org_repo_search.html:7
 #: seahub/templates/js/sysadmin-templates.html:391
 msgid "Search Library"
-msgstr "搜索资料库"
+msgstr "搜索文件库"
 
 #: seahub/organizations/templates/organizations/org_repo_search.html:10
 #: seahub/templates/js/sysadmin-templates.html:393
@@ -3604,7 +3604,7 @@ msgstr "邮箱不能为空"
 #: seahub/templates/sysadmin/repoadmin_js.html:70
 #: seahub/templates/sysadmin/sys_org_info_library.html:56
 msgid "Delete Library"
-msgstr "删除资料库"
+msgstr "删除文件库"
 
 #: seahub/organizations/templates/organizations/org_repoadmin_table.html:24
 #: seahub/templates/js/sysadmin-templates.html:446
@@ -3762,14 +3762,14 @@ msgstr "重置密码"
 #: seahub/organizations/templates/organizations/pubgrp.html:24
 #: seahub/templates/libraries.html:104
 msgid "You are not in any groups"
-msgstr "你不在任何群组中"
+msgstr "你不在任何团队中"
 
 #: seahub/organizations/templates/organizations/pubgrp.html:25
 #: seahub/templates/libraries.html:106
 msgid ""
 "Groups allow multiple people to collaborate on libraries. You can create a "
 "group by clicking the \"New Group\" button."
-msgstr "群组允许多人协作办公。你可以通过点击“新建群组”按扭来创建一个群组。"
+msgstr "团队允许多人协作办公。你可以通过点击“新建团队”按扭来创建一个团队。"
 
 #: seahub/organizations/templates/organizations/pubrepo.html:10
 #: seahub/templates/js/admin-common-templates.html:132
@@ -3781,7 +3781,7 @@ msgstr "群组允许多人协作办公。你可以通过点击“新建群组”
 #: seahub/templates/js/templates.html:1605
 #: seahub/templates/js/templates.html:1606
 msgid "New Library"
-msgstr "新建资料库"
+msgstr "新建文件库"
 
 #: seahub/organizations/templates/organizations/pubrepo.html:41
 #: seahub/templates/download.html:4 seahub/templates/file_revisions.html:88
@@ -3833,14 +3833,14 @@ msgstr "取消共享"
 #: seahub/organizations/templates/organizations/pubrepo.html:53
 #: seahub/templates/libraries.html:89
 msgid "No public libraries"
-msgstr "没有公共资料库"
+msgstr "没有公共文件库"
 
 #: seahub/organizations/templates/organizations/pubrepo.html:54
 #: seahub/templates/libraries.html:90
 msgid ""
 "You can create a public library by clicking the \"New Library\" button, "
 "others can view and download this library."
-msgstr "你可以通过点击“新建资料库”按钮来创建一个公共资料库，其他人可以查看和下载该资料库。"
+msgstr "你可以通过点击“新建文件库”按钮来创建一个公共文件库，其他人可以查看和下载该文件库。"
 
 #: seahub/organizations/templates/organizations/sysadmin_log_paginator.html:4
 #: seahub/templates/file_access.html:55
@@ -3936,7 +3936,7 @@ msgstr "Tip: 设置为0表示重置为默认上限"
 #: seahub/organizations/templates/organizations/userinfo.html:60
 #: seahub/templates/i18n.html:12 seahub/templates/sysadmin/userinfo.html:24
 msgid "Shared Libs"
-msgstr "共享的资料库"
+msgstr "共享的文件库"
 
 #: seahub/organizations/templates/organizations/userinfo.html:147
 #: seahub/templates/sysadmin/sys_org_set_quota_js.html:13
@@ -4183,16 +4183,16 @@ msgstr "Demo帐号无法被删除。"
 
 #: seahub/profile/views.py:200
 msgid "Failed to set default library."
-msgstr "设置默认资料库失败。"
+msgstr "设置默认文件库失败。"
 
 #: seahub/profile/views.py:204
 msgid "Can not set encrypted library as default library."
-msgstr "无法把加密资料库设为默认资料库。"
+msgstr "无法把加密文件库设为默认文件库。"
 
 #: seahub/profile/views.py:209
 #, python-format
 msgid "Successfully set \"%s\" as your default library."
-msgstr "成功设置 \"%s\"为你的默认资料库。"
+msgstr "成功设置 \"%s\"为你的默认文件库。"
 
 #: seahub/share/forms.py:20 seahub/share/forms.py:33
 msgid "Email is required"
@@ -4258,7 +4258,7 @@ msgstr "由于邮箱服务未正确配置，发送上传外链失败，请联系
 #: seahub/views/ajax.py:451 seahub/views/ajax.py:528 seahub/views/ajax.py:592
 #: seahub/views/ajax.py:658 seahub/views/ajax.py:917 seahub/views/ajax.py:1224
 msgid "Library does not exist."
-msgstr "资料库不存在"
+msgstr "文件库不存在"
 
 #: seahub/share/views.py:336
 msgid "Directory does not exist."
@@ -4266,7 +4266,7 @@ msgstr "目录不存在"
 
 #: seahub/share/views.py:385
 msgid "Only the owner of the library has permission to share it."
-msgstr "只有资料库拥有者才有共享权限。"
+msgstr "只有文件库拥有者才有共享权限。"
 
 #: seahub/share/views.py:423
 msgid "Please check the email(s) you entered"
@@ -4329,7 +4329,7 @@ msgid ""
 "%(site_name)s organizes files into libraries. Each library can be synced and"
 " shared separately. We have created a personal library for you. You can "
 "create more libraries later."
-msgstr "%(site_name)s 把文件组织到资料库里。每个资料库可以被单独的同步和共享。我们已经为你创建了一个私人资料库。你之后可以再创建其他的资料库。"
+msgstr "%(site_name)s 把文件组织到文件库里。每个文件库可以被单独的同步和共享。我们已经为你创建了一个私人文件库。你之后可以再创建其他的文件库。"
 
 #: seahub/templates/base_for_backbone.html:107
 #, python-format
@@ -4337,7 +4337,7 @@ msgid ""
 "%(site_name)s organizes files into libraries. Each library can be synced and"
 " shared separately. Howerver, since you are a guest user now, you can not "
 "create libraries."
-msgstr "%(site_name)s 通过资料库来管理文件，每个资料库可以单独加密与共享，但并不对“访客”用户提供此功能。"
+msgstr "%(site_name)s 通过文件库来管理文件，每个文件库可以单独加密与共享，但并不对“访客”用户提供此功能。"
 
 #: seahub/templates/choose_register.html:9
 msgid "Create a personal account"
@@ -4351,7 +4351,7 @@ msgstr "创建组织账号"
 msgid ""
 "This library is encrypted. Please input the password if you want to browse "
 "it online. And the password will be kept on the server for only 1 hour."
-msgstr "该资料库已加密。如需在线查看里面的内容，请输入解密密码。密码只会在服务器上暂存1小时。"
+msgstr "该文件库已加密。如需在线查看里面的内容，请输入解密密码。密码只会在服务器上暂存1小时。"
 
 #: seahub/templates/decrypt_repo_form.html:9
 #: seahub/templates/share_access_validation.html:13
@@ -4641,7 +4641,7 @@ msgstr "文件"
 #: seahub/templates/js/templates.html:1459 seahub/templates/libraries.html:19
 #: seahub/templates/libraries.html:39
 msgid "My Libraries"
-msgstr "我的资料库"
+msgstr "我的文件库"
 
 #: seahub/templates/home_base.html:16 seahub/templates/js/templates.html:523
 #: seahub/templates/js/templates.html:1464 seahub/templates/libraries.html:60
@@ -4657,7 +4657,7 @@ msgstr "公共"
 #: seahub/templates/js/templates.html:1492
 #: seahub/templates/js/templates.html:1495
 msgid "Shared with groups"
-msgstr "群组共享"
+msgstr "团队共享"
 
 #: seahub/templates/home_base.html:38 seahub/templates/js/templates.html:1512
 msgid "Tools"
@@ -4736,7 +4736,7 @@ msgstr "共享链接"
 
 #: seahub/templates/i18n.html:10
 msgid "View and manage all the shared links in this library."
-msgstr "查看和管理该资料库里的外链"
+msgstr "查看和管理该文件库里的外链"
 
 #: seahub/templates/js/admin-common-templates.html:52
 #: seahub/templates/js/admin-common-templates.html:113
@@ -4789,7 +4789,7 @@ msgstr "暂无成员"
 #: seahub/templates/js/templates.html:2043 seahub/templates/libraries.html:137
 #: seahub/templates/libraries.html:140
 msgid "No libraries"
-msgstr "没有资料库"
+msgstr "没有文件库"
 
 #: seahub/templates/js/admin-common-templates.html:164
 #: seahub/templates/sysadmin/useradmin_table.html:114
@@ -4807,7 +4807,7 @@ msgstr "提示：-2 表示没有限制。"
 
 #: seahub/templates/js/common-templates.html:6
 msgid "Setting library history is disabled by Admin"
-msgstr "资料库历史设置已被管理员禁用"
+msgstr "文件库历史设置已被管理员禁用"
 
 #: seahub/templates/js/common-templates.html:11
 msgid "Keep full history"
@@ -4835,11 +4835,11 @@ msgstr "新建文件夹"
 
 #: seahub/templates/js/lib-op-popups.html:48
 msgid "Current Library"
-msgstr "当前资料库"
+msgstr "当前文件库"
 
 #: seahub/templates/js/lib-op-popups.html:55
 msgid "Other Libraries"
-msgstr "其他资料库"
+msgstr "其他文件库"
 
 #: seahub/templates/js/lib-op-popups.html:66
 #: seahub/templates/shared_file_view.html:73
@@ -4862,7 +4862,7 @@ msgstr "保存中..."
 
 #: seahub/templates/js/lib-op-popups.html:107
 msgid "This library is password protected"
-msgstr "该资料库已加密"
+msgstr "该文件库已加密"
 
 #: seahub/templates/js/lib-op-popups.html:111
 msgid "*The password will be kept in the server for only 1 hour."
@@ -4932,7 +4932,7 @@ msgstr "通过拥有者搜索资料..."
 
 #: seahub/templates/js/sysadmin-templates.html:125
 msgid "Search groups by name..."
-msgstr "根据名称搜索群组..."
+msgstr "根据名称搜索团队..."
 
 #: seahub/templates/js/sysadmin-templates.html:141
 msgid "System Info"
@@ -5040,7 +5040,7 @@ msgstr "没有同步错误"
 #: seahub/templates/sysadmin/sys_statistic_traffic.html:23
 #: seahub/templates/sysadmin/sys_trafficadmin.html:20
 msgid "System"
-msgstr "系统资料库"
+msgstr "系统文件库"
 
 #: seahub/templates/js/sysadmin-templates.html:340
 #: seahub/templates/js/templates.html:504
@@ -5052,7 +5052,7 @@ msgstr "回收站"
 #: seahub/templates/js/sysadmin-templates.html:359
 #: seahub/templates/js/sysadmin-templates.html:407
 msgid "Files / Size"
-msgstr "文件数量 / 资料库大小"
+msgstr "文件数量 / 文件库大小"
 
 #: seahub/templates/js/sysadmin-templates.html:383
 #: seahub/templates/js/sysadmin-templates.html:671
@@ -5112,7 +5112,7 @@ msgstr "历史设置"
 msgid ""
 "Tip: libraries deleted %(trash_repos_expire_days)s days ago will be cleaned "
 "automatically."
-msgstr "提示：%(trash_repos_expire_days)s天前删除的资料库会被自动清空。"
+msgstr "提示：%(trash_repos_expire_days)s天前删除的文件库会被自动清空。"
 
 #: seahub/templates/js/sysadmin-templates.html:493
 #: seahub/templates/js/templates.html:1880
@@ -5122,7 +5122,7 @@ msgstr "删除时间"
 
 #: seahub/templates/js/sysadmin-templates.html:505
 msgid "No library deleted yet"
-msgstr "还没有资料库被删除"
+msgstr "还没有文件库被删除"
 
 #: seahub/templates/js/sysadmin-templates.html:573
 #: seahub/templates/js/templates.html:446
@@ -5140,7 +5140,7 @@ msgstr "上传"
 #: seahub/templates/js/templates.html:240
 #: seahub/templates/js/templates.html:245
 msgid "New Group"
-msgstr "新建群组"
+msgstr "新建团队"
 
 #: seahub/templates/js/sysadmin-templates.html:612
 #: seahub/templates/sysadmin/sys_user_admin_ldap_imported.html:25
@@ -5151,11 +5151,11 @@ msgstr "导出到 Excel"
 #: seahub/templates/js/sysadmin-templates.html:633
 #: seahub/templates/js/sysadmin-templates.html:661
 msgid "No groups"
-msgstr "没有群组"
+msgstr "没有团队"
 
 #: seahub/templates/js/sysadmin-templates.html:639
 msgid "Search Group"
-msgstr "查找群组"
+msgstr "查找团队"
 
 #: seahub/templates/js/sysadmin-templates.html:641
 msgid "Tip: you can search by keyword in name."
@@ -5169,14 +5169,14 @@ msgstr "共享给用户"
 #: seahub/templates/js/sysadmin-templates.html:774
 #: seahub/templates/js/templates.html:1177
 msgid "Share to group"
-msgstr "共享给群组"
+msgstr "共享给团队"
 
 #: seahub/templates/js/sysadmin-templates.html:813
 #: seahub/templates/js/templates.html:1388
 #: seahub/templates/js/templates.html:1765
 #: seahub/templates/js/templates.html:2354
 msgid "Group"
-msgstr "群组"
+msgstr "团队"
 
 #: seahub/templates/js/sysadmin-templates.html:925
 #: seahub/templates/js/sysadmin-templates.html:965
@@ -5211,7 +5211,7 @@ msgstr "失败"
 
 #: seahub/templates/js/templates.html:9 seahub/templates/libraries.html:41
 msgid "Deleted Libraries"
-msgstr "已删除的资料库"
+msgstr "已删除的文件库"
 
 #: seahub/templates/js/templates.html:20
 msgid "Template"
@@ -5245,7 +5245,7 @@ msgstr "请再次输入密码"
 
 #: seahub/templates/js/templates.html:71
 msgid "New Department Library"
-msgstr "新建部门资料库"
+msgstr "新建部门文件库"
 
 #: seahub/templates/js/templates.html:81
 #: seahub/templates/js/templates.html:114
@@ -5293,20 +5293,20 @@ msgstr "目录权限"
 #: seahub/templates/js/templates.html:121
 #: seahub/templates/js/templates.html:170
 msgid "Broken (please contact your administrator to fix this library)"
-msgstr "Broken (请联系您的管理员来修复该资料库)"
+msgstr "Broken (请联系您的管理员来修复该文件库)"
 
 #: seahub/templates/js/templates.html:380
 #: seahub/templates/js/templates.html:381
 msgid "Add Library"
-msgstr "添加资料库"
+msgstr "添加文件库"
 
 #: seahub/templates/js/templates.html:383
 msgid "Share existing libraries"
-msgstr "共享已有资料库 "
+msgstr "共享已有文件库 "
 
 #: seahub/templates/js/templates.html:384
 msgid "Create a new library"
-msgstr " 新建资料库 "
+msgstr " 新建文件库 "
 
 #: seahub/templates/js/templates.html:423
 #: seahub/templates/js/templates.html:424
@@ -5600,7 +5600,7 @@ msgstr "维基"
 
 #: seahub/templates/js/templates.html:1614
 msgid "This is a special group representing a department."
-msgstr "该群组代表一个部门。"
+msgstr "该团队代表一个部门。"
 
 #: seahub/templates/js/templates.html:1621
 msgid "Discussion"
@@ -5616,7 +5616,7 @@ msgstr "加载更多"
 
 #: seahub/templates/js/templates.html:1634
 msgid "No discussion in this group yet."
-msgstr "群组中暂无讨论"
+msgstr "团队中暂无讨论"
 
 #: seahub/templates/js/templates.html:1641
 msgid "Add a discussion..."
@@ -5630,7 +5630,7 @@ msgstr "用户权限"
 #: seahub/templates/js/templates.html:1732
 #: seahub/templates/js/templates.html:2301
 msgid "Group Permission"
-msgstr "群组权限"
+msgstr "团队权限"
 
 #: seahub/templates/js/templates.html:1794
 #: seahub/templates/js/templates.html:1800
@@ -5654,15 +5654,15 @@ msgstr "取消星标"
 #: seahub/templates/js/templates.html:1894
 #: seahub/templates/js/templates.html:1904
 msgid "Library Type"
-msgstr "资料库类型"
+msgstr "文件库类型"
 
 #: seahub/templates/js/templates.html:1915
 msgid "Select libraries to share"
-msgstr "选择要共享的资料库"
+msgstr "选择要共享的文件库"
 
 #: seahub/templates/js/templates.html:1976
 msgid "Deleted library"
-msgstr "已删除的资料库"
+msgstr "已删除的文件库"
 
 #: seahub/templates/js/templates.html:2004
 #: seahub/templates/snippets/search_form.html:6
@@ -5672,7 +5672,7 @@ msgstr "在当前维基搜索文件"
 #: seahub/templates/js/templates.html:2004
 #: seahub/templates/snippets/search_form.html:6
 msgid "Search files in this library"
-msgstr "在当前资料库搜索文件"
+msgstr "在当前文件库搜索文件"
 
 #: seahub/templates/js/templates.html:2006
 #: seahub/templates/snippets/search_form.html:9
@@ -5711,11 +5711,11 @@ msgstr "解散"
 
 #: seahub/templates/js/templates.html:2101
 msgid "Leave group"
-msgstr "退出群组"
+msgstr "退出团队"
 
 #: seahub/templates/js/templates.html:2108
 msgid "Rename Group To"
-msgstr "重命名群组为"
+msgstr "重命名团队为"
 
 #: seahub/templates/js/templates.html:2117
 msgid "Transfer Group To"
@@ -5723,7 +5723,7 @@ msgstr "将小组转让给"
 
 #: seahub/templates/js/templates.html:2125
 msgid "Import group members from a CSV file"
-msgstr "从 CSV 文件中导入群组成员"
+msgstr "从 CSV 文件中导入团队成员"
 
 #: seahub/templates/js/templates.html:2127
 msgid "File format: user@mail.com"
@@ -5790,14 +5790,14 @@ msgstr "查看所有提醒。"
 
 #: seahub/templates/js/templates.html:2498
 msgid "You have not shared any libraries"
-msgstr "你还没有共享任何资料库"
+msgstr "你还没有共享任何文件库"
 
 #: seahub/templates/js/templates.html:2499
 msgid ""
 "You can share libraries with your friends and colleagues by clicking the "
 "share icon of your own libraries in your home page or creating a new library"
 " in groups you are in."
-msgstr "你可以通过在你的个人页面点击你自己的资料库的共享图标, 或是在你所在的小组里创建一个新的资料库来将你的资料库共享给你的朋友和同事。"
+msgstr "你可以通过在你的个人页面点击你自己的文件库的共享图标, 或是在你所在的小组里创建一个新的文件库来将你的文件库共享给你的朋友和同事。"
 
 #: seahub/templates/js/templates.html:2513
 #: seahub/templates/js/templates.html:2575
@@ -5812,7 +5812,7 @@ msgstr "你还没有共享任何文件夹"
 msgid ""
 "You can share a single folder with a registered user if you don't want to "
 "share a whole library."
-msgstr "如果你不想共享整个资料库，你可以共享单个文件夹给已注册的用户。"
+msgstr "如果你不想共享整个文件库，你可以共享单个文件夹给已注册的用户。"
 
 #: seahub/templates/js/templates.html:2648
 #: seahub/templates/js/templates.html:2752
@@ -5869,59 +5869,59 @@ msgstr "内部链接是指向文件或目录的链接，只有对该文件或目
 
 #: seahub/templates/libraries.html:27
 msgid "You have not created any libraries"
-msgstr "你还未创建资料库"
+msgstr "你还未创建文件库"
 
 #: seahub/templates/libraries.html:28
 msgid ""
 "You can create a library to organize your files. For example, you can create"
 " one for each of your projects. Each library can be synchronized and shared "
 "separately."
-msgstr "你可以新建一个资料库来组织你的文件资料，比如为每个项目创建一个资料库，每个资料库可以单独地同步和共享。"
+msgstr "你可以新建一个文件库来组织你的文件资料，比如为每个项目创建一个文件库，每个文件库可以单独地同步和共享。"
 
 #: seahub/templates/libraries.html:44
 msgid "Tip: libraries deleted 30 days ago will be cleaned automatically."
-msgstr "Tip：30天前删除的资料库会被自动清空。"
+msgstr "Tip：30天前删除的文件库会被自动清空。"
 
 #: seahub/templates/libraries.html:50
 msgid "No deleted libraries."
-msgstr "没有已删除的资料库。"
+msgstr "没有已删除的文件库。"
 
 #: seahub/templates/libraries.html:70
 msgid "No libraries have been shared with you"
-msgstr "还没有任何资料库被共享给你"
+msgstr "还没有任何文件库被共享给你"
 
 #: seahub/templates/libraries.html:71
 msgid ""
 "No libraries have been shared directly with you. You can find more shared "
 "libraries at \"Shared with groups\"."
-msgstr "还没有任何资料库被直接共享给你。你可以在 \"群组共享\" 中看到更多的共享资料库。"
+msgstr "还没有任何文件库被直接共享给你。你可以在 \"团队共享\" 中看到更多的共享文件库。"
 
 #: seahub/templates/libraries.html:99
 msgid "My Groups"
-msgstr "我的群组"
+msgstr "我的团队"
 
 #: seahub/templates/libraries.html:108
 msgid ""
 "Groups allow multiple people to collaborate on libraries. Groups you join "
 "will be listed here."
-msgstr "群组允许多人协作办公。你加入的群组会在这儿列出。"
+msgstr "团队允许多人协作办公。你加入的团队会在这儿列出。"
 
 #: seahub/templates/libraries.html:133
 msgid ""
 "You can share libraries by clicking the \"New Library\" button above or the "
 "\"Share\" icon on your libraries list."
-msgstr "你可以通过点击上方的“新建资料库”按钮或资料库列表里的“共享”图标来共享资料库。"
+msgstr "你可以通过点击上方的“新建文件库”按钮或文件库列表里的“共享”图标来共享文件库。"
 
 #: seahub/templates/libraries.html:134
 msgid ""
 "Libraries shared as writable can be downloaded and synced by other group "
 "members. Read only libraries can only be downloaded, updates by others will "
 "not be uploaded."
-msgstr "以可读写方式共享的资料库可以被其他群组成员下载和同步，而以只读方式共享的资料库只能被下载，其他人的修改将不会被上传。"
+msgstr "以可读写方式共享的文件库可以被其他团队成员下载和同步，而以只读方式共享的文件库只能被下载，其他人的修改将不会被上传。"
 
 #: seahub/templates/libraries.html:141
 msgid "You can create libraries by clicking the \"New Library\" button above."
-msgstr "你可以点击上面的“新建资料库”按扭创建资料库。"
+msgstr "你可以点击上面的“新建文件库”按扭创建文件库。"
 
 #: seahub/templates/libraries.html:159
 msgid "You don't have any starred files yet"
@@ -6274,11 +6274,11 @@ msgstr "目录"
 
 #: seahub/templates/repo_history_view.html:89
 msgid "Restore Library"
-msgstr "还原资料库"
+msgstr "还原文件库"
 
 #: seahub/templates/repo_history_view.html:90
 msgid "Are you sure you want to restore this library?"
-msgstr "确定要还原该资料库？"
+msgstr "确定要还原该文件库？"
 
 #: seahub/templates/repo_history_view.html:114
 #, python-brace-format
@@ -6410,7 +6410,7 @@ msgstr "请输入密码"
 #: seahub/templates/snippets/search_form.html:23
 #: seahub/templates/snippets/search_form.html:26
 msgid "In all libraries"
-msgstr "在所有资料库"
+msgstr "在所有文件库"
 
 #: seahub/templates/snippets/search_form.html:20
 msgid "In this wiki"
@@ -6418,7 +6418,7 @@ msgstr "在当前维基"
 
 #: seahub/templates/snippets/search_form.html:20
 msgid "In this library"
-msgstr "在当前资料库"
+msgstr "在当前文件库"
 
 #: seahub/templates/snippets/search_form.html:24
 #, python-format
@@ -6634,7 +6634,7 @@ msgstr "当用户登录失败超过限制时，冻结用户账户。"
 
 #: seahub/templates/sysadmin/settings.html:100
 msgid "Enable users to share libraries to any groups in the system."
-msgstr "允许用户将资料库共享给系统中的任何群组。"
+msgstr "允许用户将文件库共享给系统中的任何团队。"
 
 #: seahub/templates/sysadmin/settings.html:108
 msgid "strong password"
@@ -6682,28 +6682,28 @@ msgstr "开启两步验证"
 
 #: seahub/templates/sysadmin/settings.html:140
 msgid "library history"
-msgstr "资料库历史"
+msgstr "文件库历史"
 
 #: seahub/templates/sysadmin/settings.html:141
 msgid "Allow user to change library history settings"
-msgstr "允许用户修改资料库历史设置"
+msgstr "允许用户修改文件库历史设置"
 
 #: seahub/templates/sysadmin/settings.html:146
 msgid "encrypted library"
-msgstr "加密资料库"
+msgstr "加密文件库"
 
 #: seahub/templates/sysadmin/settings.html:147
 msgid "Allow user to create encrypted libraries"
-msgstr "允许用户创建加密资料库"
+msgstr "允许用户创建加密文件库"
 
 #: seahub/templates/sysadmin/settings.html:152
 msgid "library password minimum length"
-msgstr "资料库最小密码长度"
+msgstr "文件库最小密码长度"
 
 #: seahub/templates/sysadmin/settings.html:153
 msgid ""
 "The least number of characters an encrypted library password should include."
-msgstr "加密资料库的最小密码长度。"
+msgstr "加密文件库的最小密码长度。"
 
 #: seahub/templates/sysadmin/settings.html:158
 msgid "download/upload link password minimum length"
@@ -6719,7 +6719,7 @@ msgstr "加密上传/下载外链的最小密码长度。"
 msgid ""
 "Allow user to add organization libraries. Otherwise, only system admin can "
 "add organization libraries."
-msgstr "允许用户创建机构资料库。如果关闭此功能，将只有系统管理员可以创建。"
+msgstr "允许用户创建机构文件库。如果关闭此功能，将只有系统管理员可以创建。"
 
 #: seahub/templates/sysadmin/settings.html:169
 msgid "Allow user to clean library trash"
@@ -6902,7 +6902,7 @@ msgstr "返回机构列表"
 
 #: seahub/templates/sysadmin/sys_org_info_base.html:21
 msgid "Number of groups"
-msgstr "群组数量"
+msgstr "团队数量"
 
 #: seahub/templates/sysadmin/sys_org_info_base.html:30
 msgid "Set org storage limit"
@@ -6920,7 +6920,7 @@ msgstr "此机构无任何组"
 
 #: seahub/templates/sysadmin/sys_org_info_library.html:46
 msgid "This organization doesn't have any libraries"
-msgstr "此机构无任何资料库"
+msgstr "此机构无任何文件库"
 
 #: seahub/templates/sysadmin/sys_org_info_setting.html:13
 msgid "Rename Organization"
@@ -7156,7 +7156,7 @@ msgstr "导入用户"
 msgid ""
 "You can also add a user as a guest, who will not be allowed to create "
 "libraries and groups."
-msgstr "可以添加一个“访客”用户，“访客”用户无法创建资料库和群组。"
+msgstr "可以添加一个“访客”用户，“访客”用户无法创建文件库和团队。"
 
 #: seahub/templates/sysadmin/sys_useradmin.html:72
 msgid "Import users from a .xlsx file"
@@ -7318,7 +7318,7 @@ msgstr "设置用户 Reference ID"
 
 #: seahub/templates/sysadmin/userinfo.html:254
 msgid "This user has no shared libraries"
-msgstr "此用户没有被共享资料库"
+msgstr "此用户没有被共享文件库"
 
 #: seahub/templates/sysadmin/userinfo.html:302
 msgid "This user has not created any shared links"
@@ -7419,7 +7419,7 @@ msgstr "共享来源："
 
 #: seahub/templates/view_shared_upload_link.html:11
 msgid "The owner of this library has run out of space."
-msgstr "该资料库拥有者的空间已用完。"
+msgstr "该文件库拥有者的空间已用完。"
 
 #: seahub/templates/view_shared_upload_link.html:18
 #: seahub/templates/view_shared_upload_link.html:64
@@ -7512,7 +7512,7 @@ msgstr "新建维基"
 
 #: seahub/templates/wiki/wiki_list.html:42
 msgid "Create Wiki from a library"
-msgstr "从已有资料库选择"
+msgstr "从已有文件库选择"
 
 #: seahub/templates/wiki/wiki_list.html:89
 #: seahub/templates/wiki/wiki_list.html:90
@@ -7521,7 +7521,7 @@ msgstr "添加维基"
 
 #: seahub/templates/wiki/wiki_list.html:93
 msgid "Choose a library as Wiki"
-msgstr "选择已有资料库作为维基"
+msgstr "选择已有文件库作为维基"
 
 #: seahub/templates/wiki/wiki_list.html:146
 #: seahub/templates/wiki/wiki_list.html:205
@@ -7561,13 +7561,13 @@ msgstr "无法查看文件回收站"
 
 #: seahub/views/__init__.py:456
 msgid "Unable to view library modification"
-msgstr "无法浏览该资料库修改历史"
+msgstr "无法浏览该文件库修改历史"
 
 #: seahub/views/__init__.py:536 seahub/views/__init__.py:579
 #: seahub/views/__init__.py:781 seahub/views/__init__.py:907
 #: seahub/views/ajax.py:1186 seahub/views/file.py:1832
 msgid "Library does not exist"
-msgstr "资料库不存在"
+msgstr "文件库不存在"
 
 #: seahub/views/__init__.py:570
 msgid "Please specify history ID"
@@ -7575,7 +7575,7 @@ msgstr "请指定历史记录ID"
 
 #: seahub/views/__init__.py:574
 msgid "Successfully restored the library."
-msgstr "资料库还原成功。"
+msgstr "文件库还原成功。"
 
 #: seahub/views/__init__.py:581
 msgid "History you specified does not exist"
@@ -7609,7 +7609,7 @@ msgstr "\"个人维基\"模块删除成功。"
 
 #: seahub/views/ajax.py:85
 msgid "You don't have permission to access the library."
-msgstr "你没有权限访问该资料库。"
+msgstr "你没有权限访问该文件库。"
 
 #: seahub/views/ajax.py:93
 msgid "No path."
@@ -7617,11 +7617,11 @@ msgstr "路径不存在"
 
 #: seahub/views/ajax.py:158
 msgid "The group doesn't exist"
-msgstr "该群组不存在"
+msgstr "该团队不存在"
 
 #: seahub/views/ajax.py:287 seahub/views/ajax.py:937 seahub/views/ajax.py:1247
 msgid "Library is encrypted."
-msgstr "该资料库已加密"
+msgstr "该文件库已加密"
 
 #: seahub/views/ajax.py:293 seahub/views/ajax.py:943
 msgid "Error: no head commit id"
@@ -7704,7 +7704,7 @@ msgstr "文件大小超过 %s，无法在线查看。"
 
 #: seahub/views/file.py:330 seahub/views/file.py:671
 msgid "The library is encrypted, can not open file online."
-msgstr "加密资料库不能在线预览文件。"
+msgstr "加密文件库不能在线预览文件。"
 
 #: seahub/views/file.py:428 seahub/views/file.py:450 seahub/views/file.py:455
 #: seahub/views/file.py:493 seahub/views/file.py:850 seahub/views/file.py:872
@@ -7745,11 +7745,11 @@ msgstr "无法查看文件，外链流量已用完。"
 
 #: seahub/views/file.py:1334
 msgid "The library does not exist."
-msgstr "资料库不存在"
+msgstr "文件库不存在"
 
 #: seahub/views/file.py:1338
 msgid "The library is encrypted."
-msgstr "该资料库已加密"
+msgstr "该文件库已加密"
 
 #: seahub/views/file.py:1423
 msgid "Unable to edit file"
