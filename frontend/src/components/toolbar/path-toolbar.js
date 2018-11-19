@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import ListTagDialog from '../dialog/list-tag-dialog';
 import CreateTagDialog from '../dialog/create-tag-dialog';
 import UpdateTagDialog from '../dialog/update-tag-dialog';
+import ListTaggedFilesDialog from '../dialog/list-taggedfiles-dialog';
 
 const propTypes = {
   filePath: PropTypes.string.isRequired
@@ -19,6 +20,7 @@ class PathToolbar extends React.Component {
       isListRepoTagShow: false,
       isUpdateRepoTagShow: false,
       isCreateRepoTagShow: false,
+      isListTaggedFileShow: false,
     };
   }
 
@@ -38,6 +40,14 @@ class PathToolbar extends React.Component {
       currentTag: currentTag,
       isListRepoTagShow: !this.state.isListRepoTagShow,
       isUpdateRepoTagShow: !this.state.isUpdateRepoTagShow,
+    });
+  }
+
+  onListTaggedFileToggle = (currentTag) => {
+    this.setState({
+      currentTag: currentTag,
+      isListRepoTagShow: !this.state.isListRepoTagShow,
+      isListTaggedFileShow: !this.state.isListTaggedFileShow,
     });
   }
 
@@ -67,6 +77,7 @@ class PathToolbar extends React.Component {
               onListTagCancel={this.onListRepoTagToggle}
               onCreateRepoTag={this.onCreateRepoTagToggle}
               onUpdateRepoTag={this.onUpdateRepoTagToggle}
+              onListFileCancel={this.onListTaggedFileToggle}
             />
           }
           {
@@ -80,6 +91,13 @@ class PathToolbar extends React.Component {
             <UpdateTagDialog 
               currentTag={this.state.currentTag} 
               toggleCancel={this.onUpdateRepoTagToggle}
+            />
+          }
+          {
+            this.state.isListTaggedFileShow &&
+            <ListTaggedFilesDialog
+              repoTagId={this.state.currentTag.id}
+              toggleCancel={this.onListTaggedFileToggle}
             />
           }
         </Fragment>
