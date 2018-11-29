@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import RepoListItem from './repo-list-item';
 
 const propTypes = {
+  isShowFile: PropTypes.bool,
   repo: PropTypes.object,
   repoList: PropTypes.array,
   selectedRepo: PropTypes.object,
@@ -32,6 +33,7 @@ class RepoListView extends React.Component {
               selectedPath={this.props.selectedPath}
               onRepoItemClick={this.props.onRepoItemClick} 
               onDirentItemClick={this.props.onDirentItemClick}
+              isShowFile={this.props.isShowFile}
             />
           );
         })}
