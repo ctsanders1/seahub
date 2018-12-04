@@ -79,6 +79,7 @@ def is_cluster_mode():
     return enabled
 
 CLUSTER_MODE = is_cluster_mode()
+logger = logging.getLogger(__name__)
 
 try:
     from seahub.settings import OFFICE_CONVERTOR_ROOT
@@ -554,10 +555,12 @@ if EVENTS_CONFIG_FILE:
         return False
 
     def _get_events(username, start, count, org_id=None):
+        logger.error('%s: _get_events start' % username)
         ev_session = SeafEventsSession()
 
         valid_events = []
         total_used = 0
+        logger.error('%s: a' % username)
         try:
             next_start = start
             while True:
@@ -588,10 +591,13 @@ if EVENTS_CONFIG_FILE:
         finally:
             ev_session.close()
 
+        logger.error('%s: b' % username)
+
         for e in valid_events:            # parse commit description
             if hasattr(e, 'commit'):
                 e.commit.converted_cmmt_desc = convert_cmmt_desc_link(e.commit)
                 e.commit.more_files = more_files_in_commit(e.commit)
+        logger.error('%s: c' % username)
         return valid_events, start + total_used
 
     def _get_events_inner(ev_session, username, start, limit, org_id=None):
@@ -600,6 +606,8 @@ if EVENTS_CONFIG_FILE:
 
         Return 'limit' events or less than 'limit' events if no more events remain
         '''
+        logger.error('%s: _get_events_inner start' % username)
+
         valid_events = []
         next_start = start
         while True:
@@ -634,6 +642,7 @@ if EVENTS_CONFIG_FILE:
                 break
             next_start = next_start + len(valid_events)
 
+        logger.error('%s: _get_events_inner end' % username)
         return valid_events
 
     def get_user_events(username, start, count):

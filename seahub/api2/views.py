@@ -4118,6 +4118,10 @@ class EventsView(APIView):
     throttle_classes = (UserRateThrottle, )
 
     def get(self, request, format=None):
+
+        email = request.user.username
+        logger.error('%s: events get start' % email)
+
         if not EVENTS_ENABLED:
             events = None
             return api_error(status.HTTP_404_NOT_FOUND, 'Events not enabled.')
@@ -4135,6 +4139,7 @@ class EventsView(APIView):
         email = request.user.username
         events_count = 15
 
+        logger.error('%s: 1' % email)
         if is_org_context(request):
             org_id = request.user.org.org_id
             events, events_more_offset = get_org_user_events(org_id, email,
@@ -4146,6 +4151,7 @@ class EventsView(APIView):
         events_more = True if len(events) == events_count else False
 
         l = []
+        logger.error('%s: 2' % email)
         for e in events:
             d = dict(etype=e.etype)
             l.append(d)
@@ -4185,11 +4191,13 @@ class EventsView(APIView):
             d['time_relative'] = translate_seahub_time(utc_to_local(e.timestamp))
             d['date'] = utc_to_local(e.timestamp).strftime("%Y-%m-%d")
 
+        logger.error('%s: 3' % email)
         ret = {
             'events': l,
             'more': events_more,
             'more_offset': events_more_offset,
             }
+
         return Response(ret)
 
 class UnseenMessagesCountView(APIView):
