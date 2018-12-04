@@ -65,7 +65,10 @@ class MainPanel extends Component {
       direntPath: '',
       currentRepo: null,
       isRepoOwner: false,
+      activeTitle: '',
     };
+    this.titlesInfo = null;
+    this.pageScroll = false;
   }
 
   componentDidMount() {
@@ -212,6 +215,54 @@ class MainPanel extends Component {
 
   }
 
+  handlePageScroll = (e) => {    
+    if (this.props.pathExist && this.props.isViewFile && !this.pageScroll) {
+      this.pageScroll = true;
+      let that = this;
+      setTimeout(function() {
+        that.pageScroll = false;
+      }, 50);
+      const contentScrollTop = this.refs.curViewContent.scrollTop + 120;
+      if (!this.titlesInfo) {
+        this.getTitlesInfo();
+      }
+      if (this.titlesInfo.length === 0) {
+        return;
+      }
+      let activeTitle;
+      if (contentScrollTop <= this.titlesInfo[0].offsetTop) {
+        activeTitle = this.titlesInfo[0].innerText;
+      }
+      else if (contentScrollTop > this.titlesInfo[this.titlesInfo.length - 1].offsetTop) {
+        activeTitle = this.titlesInfo[this.titlesInfo.length - 1].innerText;
+      }
+      else {
+        for (let i = 0; i < this.titlesInfo.length - 1; i++) {
+          if (contentScrollTop > this.titlesInfo[i].offsetTop && this.titlesInfo[i + 1] &&
+            contentScrollTop < this.titlesInfo[i + 1].offsetTop) {
+            activeTitle = this.titlesInfo[i].innerText;
+            break;
+          }
+        }
+      }
+      this.setState({
+        activeTitle: activeTitle
+      });
+    }
+  }
+
+  getTitlesInfo = () => {
+    let titlesInfo = [];
+    let headingList = document.querySelectorAll('h2[id^="user-content"], h3[id^="user-content"]');
+    for (let i = 0; i < headingList.length; i++) {
+      let title = {};
+      title.offsetTop = headingList[i].offsetTop;
+      title.innerText = headingList[i].innerText;
+      titlesInfo.push(title);
+    }
+    this.titlesInfo = titlesInfo;
+  }
+
   render() {
     return (
       <div className="main-panel wiki-main-panel o-hidden">
@@ -279,7 +330,7 @@ class MainPanel extends Component {
             <div className="cur-view-path">
               <CurDirPath currentPath={this.props.path} repoName={slug} onPathClick={this.onMainNavBarClick}/>
             </div>
-            <div className="cur-view-content">
+            <div className="cur-view-content" onScroll={this.handlePageScroll} ref="curViewContent">
               { !this.props.pathExist ?
                 <div className="message empty-tip err-message"><h2>{gettext('Folder does not exist.')}</h2></div> :
                 <Fragment>
@@ -289,6 +340,8 @@ class MainPanel extends Component {
                       latestContributor={this.props.latestContributor}
                       lastModified = {this.props.lastModified}
                       isFileLoading={this.props.isFileLoading}
+                      activeTitle={this.state.activeTitle}
+                      ref={(ref) => this.MarkdownContentViewer = ref}
                     /> :
                     <Fragment>
                       <DirentListView
